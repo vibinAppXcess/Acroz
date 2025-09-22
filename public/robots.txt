@@ -1,0 +1,35 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://ACROZ.AI/sitemap.xml
+
+# Crawl delay (optional - be respectful to servers)
+Crawl-delay: 1
+
+# Disallow admin or private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /node_modules/
+
+# Allow important pages
+Allow: /
+Allow: /overview
+Allow: /pricing
+Allow: /enterprise
+Allow: /blog
+Allow: /signup
+Allow: /process-documentation
+Allow: /visualizing-teams
+Allow: /technical-diagramming
+Allow: /visualizing-infrastructure
+Allow: /ai-diagramming
+Allow: /interactive-learning
+Allow: /visio-replacement
+Allow: /more-use-case
+Allow: /contact-sales
+Allow: /service-integrations
+Allow: /privacy-policy
+Allow: /terms-of-services 

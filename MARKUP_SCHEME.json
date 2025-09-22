@@ -1,0 +1,489 @@
+{
+  "application": {
+    "name": "Acroz Diagramming Application",
+    "description": "React-based web application for creating, collaborating on, and managing various types of diagrams and visualizations",
+    "version": "1.0.0",
+    "framework": "React 18+",
+    "buildTool": "Vite",
+    "styling": "Tailwind CSS"
+  },
+  "coreLayoutComponents": {
+    "Header": {
+      "file": "Header.jsx",
+      "purpose": "Navigation and branding component",
+      "location": "/src/components/Header.jsx"
+    },
+    "Footer": {
+      "file": "Footer.jsx",
+      "purpose": "Site footer with links and information",
+      "location": "/src/components/Footer.jsx"
+    },
+    "ThemeProvider": {
+      "file": "ThemeProvider.jsx",
+      "purpose": "Theme management and context provider",
+      "location": "/src/components/ThemeProvider.jsx"
+    },
+    "ScrollToTop": {
+      "file": "ScrollToTop.jsx",
+      "purpose": "Utility for scrolling to top on route changes",
+      "location": "/src/components/ScrollToTop.jsx"
+    }
+  },
+  "pages": {
+    "homepage": {
+      "route": "/",
+      "description": "Main landing page with multiple sections showcasing application capabilities",
+      "components": [
+        {
+          "name": "HeroSection",
+          "file": "HeroSection.jsx",
+          "purpose": "Main landing banner and call-to-action"
+        },
+        {
+          "name": "AIGenerationSection",
+          "file": "AIGenerationSection.jsx",
+          "purpose": "AI-powered diagram generation features"
+        },
+        {
+          "name": "CollaborationSection",
+          "file": "CollaborationSection.jsx",
+          "purpose": "Team collaboration capabilities"
+        },
+        {
+          "name": "DataInsightsSection",
+          "file": "DataInsightsSection.jsx",
+          "purpose": "Data visualization and insights"
+        },
+        {
+          "name": "UseCasesSection",
+          "file": "UseCasesSection.jsx",
+          "purpose": "Common use cases and applications"
+        },
+        {
+          "name": "IntegrationsSection",
+          "file": "IntegrationsSection.jsx",
+          "purpose": "Third-party integrations"
+        },
+        {
+          "name": "TemplatesSection",
+          "file": "TemplatesSection.jsx",
+          "purpose": "Pre-built diagram templates"
+        },
+        {
+          "name": "CapabilitiesSection",
+          "file": "CapabilitiesSection.jsx",
+          "purpose": "Core features and capabilities"
+        },
+        {
+          "name": "DiagramPreview",
+          "file": "DiagramPreview.jsx",
+          "purpose": "Interactive diagram preview"
+        }
+      ]
+    },
+    "productOverview": {
+      "overview": {
+        "route": "/overview",
+        "component": "AcrozOverview.jsx",
+        "purpose": "Comprehensive product overview and introduction"
+      },
+      "processDocumentation": {
+        "route": "/process-documentation",
+        "component": "ProcessDocumentationSection.jsx",
+        "purpose": "Process documentation and workflow features"
+      }
+    },
+    "useCasePages": {
+      "visualizingTeams": {
+        "route": "/visualizing-teams",
+        "component": "VisualizingTeamsPage.jsx",
+        "purpose": "Team structure and organization visualization"
+      },
+      "technicalDiagramming": {
+        "route": "/technical-diagramming",
+        "component": "TechnicalDiagramming.jsx",
+        "purpose": "Technical architecture and system diagrams"
+      },
+      "visualizingInfrastructure": {
+        "route": "/visualizing-infrastructure",
+        "component": "VisualizingInfrastructure.jsx",
+        "purpose": "Infrastructure and network diagrams"
+      },
+      "aiDiagramming": {
+        "route": "/ai-diagramming",
+        "component": "AIDiagramming.jsx",
+        "purpose": "AI-powered diagram creation and automation"
+      },
+      "interactiveLearning": {
+        "route": "/interactive-learning",
+        "component": "InteractiveLearning.jsx",
+        "purpose": "Educational and training diagram features"
+      },
+      "visioReplacement": {
+        "route": "/visio-replacement",
+        "component": "VisioReplacement.jsx",
+        "purpose": "Microsoft Visio alternative features"
+      },
+      "moreUseCases": {
+        "route": "/more-use-case",
+        "component": "MoreUseCases.jsx",
+        "purpose": "Additional use cases and applications"
+      }
+    },
+    "businessPages": {
+      "pricing": {
+        "route": "/pricing",
+        "component": "PricingPage.jsx",
+        "purpose": "Pricing plans and subscription options"
+      },
+      "enterprise": {
+        "route": "/enterprise",
+        "component": "EnterprisePage.jsx",
+        "purpose": "Enterprise features and solutions"
+      },
+      "contactSales": {
+        "route": "/contact-sales",
+        "component": "ContactSalesPage.jsx",
+        "purpose": "Sales contact and inquiry forms"
+      },
+      "serviceIntegrations": {
+        "route": "/service-integrations",
+        "component": "ServiceIntegrationsPage.jsx",
+        "purpose": "Third-party service integrations and app connections"
+      },
+      "blog": {
+        "route": "/blog",
+        "component": "BlogPage.jsx",
+        "purpose": "Blog articles and content"
+      }
+    },
+    "userAccountPages": {
+      "signup": {
+        "route": "/signup",
+        "component": "SignupPage.jsx",
+        "purpose": "User registration and account creation"
+      }
+    },
+    "legalPages": {
+      "privacyPolicy": {
+        "route": "/privacy-policy",
+        "component": "PrivacyPolicyPage.jsx",
+        "purpose": "Privacy policy and data handling"
+      },
+      "termsOfServices": {
+        "route": "/terms-of-services",
+        "component": "TermsOfServicesPage.jsx",
+        "purpose": "Terms of service and usage agreements"
+      }
+    }
+  },
+  "pageCategories": {
+    "marketingAndConversion": [
+      {
+        "route": "/",
+        "name": "Homepage",
+        "category": "Primary landing page"
+      },
+      {
+        "route": "/overview",
+        "name": "Overview",
+        "category": "Product introduction"
+      },
+      {
+        "route": "/pricing",
+        "name": "Pricing",
+        "category": "Conversion page"
+      },
+      {
+        "route": "/enterprise",
+        "name": "Enterprise",
+        "category": "B2B sales page"
+      },
+      {
+        "route": "/contact-sales",
+        "name": "Contact Sales",
+        "category": "Lead generation"
+      }
+    ],
+    "featureShowcase": [
+      {
+        "route": "/process-documentation",
+        "name": "Process Documentation",
+        "category": "Workflow features"
+      },
+      {
+        "route": "/visualizing-teams",
+        "name": "Visualizing Teams",
+        "category": "Team management"
+      },
+      {
+        "route": "/technical-diagramming",
+        "name": "Technical Diagramming",
+        "category": "Technical architecture"
+      },
+      {
+        "route": "/visualizing-infrastructure",
+        "name": "Visualizing Infrastructure",
+        "category": "Infrastructure mapping"
+      },
+      {
+        "route": "/ai-diagramming",
+        "name": "AI Diagramming",
+        "category": "AI features"
+      },
+      {
+        "route": "/interactive-learning",
+        "name": "Interactive Learning",
+        "category": "Educational features"
+      },
+      {
+        "route": "/visio-replacement",
+        "name": "Visio Replacement",
+        "category": "Alternative solution"
+      },
+      {
+        "route": "/more-use-case",
+        "name": "More Use Cases",
+        "category": "Additional applications"
+      }
+    ],
+    "contentPages": [
+      {
+        "route": "/blog",
+        "name": "Blog",
+        "category": "Content marketing"
+      }
+    ],
+    "userJourney": [
+      {
+        "route": "/signup",
+        "name": "Signup",
+        "category": "User registration"
+      }
+    ],
+    "legalAndCompliance": [
+      {
+        "route": "/privacy-policy",
+        "name": "Privacy Policy",
+        "category": "Legal compliance"
+      },
+      {
+        "route": "/terms-of-services",
+        "name": "Terms of Services",
+        "category": "Legal compliance"
+      }
+    ]
+  },
+  "componentHierarchy": {
+    "App": {
+      "ThemeProvider": {},
+      "Router": {
+        "ScrollToTop": {},
+        "Routes": {
+          "homepage": {
+            "Header": {},
+            "HeroSection": {},
+            "AIGenerationSection": {},
+            "CollaborationSection": {},
+            "DataInsightsSection": {},
+            "UseCasesSection": {},
+            "IntegrationsSection": {},
+            "TemplatesSection": {},
+            "CapabilitiesSection": {},
+            "DiagramPreview": {},
+            "Footer": {}
+          },
+          "overview": {
+            "Header": {},
+            "AcrozOverview": {},
+            "Footer": {}
+          },
+          "processDocumentation": {
+            "Header": {},
+            "ProcessDocumentationSection": {},
+            "Footer": {}
+          },
+          "visualizingTeams": {
+            "Header": {},
+            "VisualizingTeamsPage": {},
+            "Footer": {}
+          },
+          "technicalDiagramming": {
+            "Header": {},
+            "TechnicalDiagramming": {},
+            "Footer": {}
+          },
+          "visualizingInfrastructure": {
+            "Header": {},
+            "VisualizingInfrastructure": {},
+            "Footer": {}
+          },
+          "aiDiagramming": {
+            "Header": {},
+            "AIDiagramming": {},
+            "Footer": {}
+          },
+          "interactiveLearning": {
+            "Header": {},
+            "InteractiveLearning": {},
+            "Footer": {}
+          },
+          "visioReplacement": {
+            "Header": {},
+            "VisioReplacement": {},
+            "Footer": {}
+          },
+          "moreUseCases": {
+            "Header": {},
+            "MoreUseCases": {},
+            "Footer": {}
+          },
+          "pricing": {
+            "Header": {},
+            "PricingPage": {},
+            "Footer": {}
+          },
+          "enterprise": {
+            "Header": {},
+            "EnterprisePage": {},
+            "Footer": {}
+          },
+          "contactSales": {
+            "Header": {},
+            "ContactSalesPage": {},
+            "Footer": {}
+          },
+          "serviceIntegrations": {
+            "Header": {},
+            "ServiceIntegrationsPage": {},
+            "Footer": {}
+          },
+          "blog": {
+            "Header": {},
+            "BlogPage": {},
+            "Footer": {}
+          },
+          "signup": {
+            "Header": {},
+            "SignupPage": {},
+            "Footer": {}
+          },
+          "privacyPolicy": {
+            "Header": {},
+            "PrivacyPolicyPage": {},
+            "Footer": {}
+          },
+          "termsOfServices": {
+            "Header": {},
+            "TermsOfServicesPage": {},
+            "Footer": {}
+          }
+        }
+      }
+    }
+  },
+  "technicalImplementation": {
+    "routing": {
+      "framework": "React Router v6",
+      "router": "BrowserRouter",
+      "features": [
+        "Each route includes Header and Footer components",
+        "ScrollToTop utility ensures proper page positioning"
+      ]
+    },
+    "componentOrganization": {
+      "pageComponents": "/src/components/",
+      "utilities": "/src/components/js/",
+      "assets": "/src/assets/"
+    },
+    "styling": {
+      "framework": "Tailwind CSS",
+      "processor": "PostCSS",
+      "customCSS": ["App.css", "index.css"]
+    },
+    "buildConfiguration": {
+      "buildTool": "Vite",
+      "linter": "ESLint",
+      "framework": "React 18+ with JSX"
+    }
+  },
+  "seoConsiderations": {
+    "pageTitles": "Each page should include appropriate page titles",
+    "metaTags": [
+      "Meta descriptions",
+      "Open Graph tags",
+      "Twitter Card tags"
+    ],
+    "semanticHTML": [
+      "Proper heading hierarchy (h1, h2, h3, etc.)",
+      "Semantic elements (main, section, article, etc.)",
+      "Accessible navigation and content structure"
+    ]
+  },
+  "performanceOptimization": {
+    "codeSplitting": [
+      "Route-based code splitting for better performance",
+      "Lazy loading for non-critical components"
+    ],
+    "assetOptimization": [
+      "Optimized images and SVGs",
+      "Efficient CSS delivery",
+      "Minimal JavaScript bundles"
+    ]
+  },
+  "accessibilityFeatures": {
+    "ariaLabels": [
+      "Proper ARIA labels for interactive elements",
+      "Screen reader friendly navigation",
+      "Keyboard navigation support"
+    ],
+    "colorContrast": [
+      "WCAG compliant color schemes",
+      "High contrast mode support",
+      "Dark/light theme toggle"
+    ]
+  },
+  "futureEnhancements": {
+    "potentialNewPages": [
+      {
+        "route": "/dashboard",
+        "name": "User Dashboard",
+        "purpose": "User account management"
+      },
+      {
+        "route": "/templates",
+        "name": "Template Gallery",
+        "purpose": "Template showcase"
+      },
+      {
+        "route": "/help",
+        "name": "Help Center",
+        "purpose": "User support"
+      },
+      {
+        "route": "/api-docs",
+        "name": "API Documentation",
+        "purpose": "Developer resources"
+      },
+      {
+        "route": "/community",
+        "name": "Community Forum",
+        "purpose": "User community"
+      }
+    ],
+    "componentImprovements": [
+      "Enhanced mobile responsiveness",
+      "Progressive Web App features",
+      "Advanced search functionality",
+      "Real-time collaboration features"
+    ]
+  },
+  "statistics": {
+    "totalPages": 15,
+    "totalComponents": 25,
+    "useCasePages": 8,
+    "businessPages": 4,
+    "legalPages": 2,
+    "userPages": 1
+  }
+} 
